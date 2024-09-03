@@ -1,0 +1,333 @@
+/* ESTILOS GENERALES */
+body {
+    font-family: 'Arial', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffff;
+    color: #ff5f5f;
+}
+
+
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #ff5f5f; /* Cambia a rojo o ajusta según sea necesario */
+    margin-bottom: 0; /* Asegúrate de que no haya márgenes adicionales */
+}
+
+.services a{
+    text-decoration: none;
+}
+
+.menu {
+    display: none;
+}
+
+
+
+
+/* BARRA DE NAVEGACION */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff5f5f;
+    padding: 3px 20px;
+}
+
+.nav-logo-title {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    height: 60px;
+    margin-right: 10px;
+    opacity: 0.8;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 17px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+nav a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #e34747;
+    border-radius: 5px;
+}
+
+
+
+
+/* PARRAFO DE NAV */
+.about {
+    max-width: 88%;
+    margin: 10px auto;
+    padding: 10px 15px;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #000000;
+    text-align: justify;
+    font-weight: bold;
+    transform: translateY(20px);
+    transition: opacity 1s 0.2s, transform 1s 0.2s;
+}
+
+.about.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* Pie de página */
+footer {
+    background-color: #ff5f5f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilo base para el botón de menú */
+.menu {
+    display: none;
+    /* Estilo para el botón del menú */
+}
+
+.menu button {
+    background-color: white; /* Fondo blanco */
+    color: #ff5f5f; /* Texto rojo */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor de mano al pasar por encima */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efecto de transición suave */
+}
+
+.menu button:hover {
+    transform: scale(1.05); /* Efecto de escala al pasar el cursor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
+}
+
+
+
+
+
+
+
+
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .main-content {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .main-content h2 {
+        font-size: 2em;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row; /* Asegura que los elementos sigan en fila */
+        justify-content: space-between; /* Mantiene los elementos separados */
+        padding: 10px;
+    }
+
+    .nav-logo-title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* Alinea el logo y título a la izquierda */
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    nav h1 {
+        font-size: 18px;
+    }
+
+    .services,
+    .benefits-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-card,
+    .benefit-card {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; /* Asegura que el logo y el menú estén a los extremos */
+    }
+
+    .nav-logo-title {
+        align-items: center;
+        justify-content: flex-start; /* Logo y título a la izquierda */
+    }
+
+    .menu {
+        right: 10px; /* Ajusta el espaciado en pantallas pequeñas */
+    }
+
+    nav .logo {
+        height: 50px;
+    }
+
+    .main-content h2 {
+        font-size: 1.5em;
+    }
+
+    .main-content p {
+        font-size: 0.9em;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu {
+        display: contents;
+    }
+}
+
+button {
+    background-color: #ffffff;
+    margin-left: 20px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: rgb(0, 0, 0);
+}
+
+header button:hover {
+    background-color: #ff5f5f;
+    color: #000000;
+    transform: scale(1.3);
+}
+
+header a {
+    text-decoration: none;
+}
+
+header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+    background-color: #ff5f5f;
+}
+
+header .overlay .overlay-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header .overlay a {
+    padding: 10px 0px;
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease 0s;
+    color: #ffffff;
+}
+
+header .overlay a:hover {
+    color: #ff5f5f;
+    background-color: #fff;
+}
+
+/* ESTILO DEL BANNER */
+
+.main-content {
+    position: relative;
+    background: url('img/niño.jpg') center/cover no-repeat;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(100% - 40px); /* Ajusta el ancho al mismo que el nav */
+    max-width: 100%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+
+.main-content h2 {
+    font-size: 3em;
+    margin: 0 0 10px 0; /* Añade margen inferior para separar el título del texto */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.main-content p {
+    max-width: 700px;
+    margin: 10px 0 0 0; /* Añade margen superior para aumentar la separación */
+    line-height: 1.6;
+    font-size: 20px;
+    text-align: justify;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s 0.2s, transform 1s 0.2s;
+}
+
+.main-content img {
+    display: none;
+}
