@@ -1,0 +1,174 @@
+/* Estilo para el botón CONTACTANOS */
+.contact-button {
+    padding: 10px 20px;
+    background-color: #e34747;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold; /* Hace la letra más gruesa */
+    margin-top: 40px; /* Ubica el botón más abajo */
+    box-shadow: 0px 4px 10px rgba(255, 137, 137, 0.5); /* Agrega sombra/brillo blanco */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave para los efectos */
+}
+
+.contact-button:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 6px 15px rgba(255, 132, 132, 0.7); /* Aumenta el brillo al pasar el cursor */
+}
+
+
+
+
+/* Estilos para la sección de novedades */
+.news {
+    padding: 20px;
+    background-color: #ff5f5f; /* Fondo azul claro */
+    margin-top: 10px;
+    
+}
+
+.news h2 {
+    font-family: Arial, sans-serif; /* Cambio a Arial */
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.5em; /* Aumento del tamaño del título */
+    margin-top: 0; /* Elimina el margen superior */
+    margin-bottom: 10px; /* Ajusta el margen inferior según sea necesario */
+}
+
+.news-item {
+    display: flex;
+    align-items: flex-start; /* Alineación vertical superior del contenido */
+    margin-top: 10px; /* Reducir margen superior si es necesario */
+    justify-content: space-between; /* Distribuye espacio entre texto e imagen */
+}
+
+.news-content {
+    max-width: 60%; /* Ajusta el ancho del contenido */
+    text-align: justify; /* Justificación del texto */
+    margin-left: 30px; /* Espacio entre el texto y la imagen */
+    margin-right: 50px;
+}
+
+.news-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px; /* Reducido el margen inferior del título */
+    color: #ffffff; /* Color de texto blanco */
+    font-family: Arial, sans-serif; /* Cambio a Arial */
+}
+
+.news-content p {
+    font-size: 1em;
+    color: #ffffff; /* Color de texto blanco */
+    margin-top: 0; /* Eliminado margen superior para acercar el texto */
+    margin-bottom: 15px; /* Mantener margen inferior */
+    font-family: Arial, sans-serif; /* Cambio a Arial */
+}
+
+.news-content button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #ff5f5f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.news-content button:hover {
+    background-color: #e44242;
+    color: #ffffff;
+}
+
+.news img {
+    max-width: 50%; /* Ajusta el ancho de la imagen para hacerla más grande */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para una mejor estética */
+    margin-left: 50px; /* Agrega margen a la izquierda de la imagen */
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+/* Responsive design para dispositivos móviles */
+@media (max-width: 768px) {
+    .news-item {
+        flex-direction: column; /* Cambia a disposición vertical */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .news img {
+        max-width: 90%; /* Ajusta el ancho de la imagen en móviles */
+        margin: 0 auto 15px auto; /* Centra la imagen y añade margen inferior */
+    }
+
+    .news-content {
+        max-width: 100%; /* El texto ocupa todo el ancho */
+        margin: 0; /* Elimina márgenes laterales */
+        text-align: center; /* Centra el texto */
+    }
+}
+
+/* Estilos para la sección de sobre nosotros */
+.about-us {
+    padding: 20px;
+    background-color: #ff5f5f; /* Fondo azul claro */
+    margin-top: 10px;
+    
+}
+
+.about-us h2 {
+    font-family: Arial, sans-serif; /* Cambio a Arial */
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.5em; /* Tamaño del título */
+    margin-top: 0; /* Elimina el margen superior */
+    margin-bottom: 10px; /* Ajusta el margen inferior según sea necesario */
+}
+
+.about-us-content {
+    display: flex;
+    align-items: flex-start; /* Alineación vertical superior del contenido */
+    justify-content: space-between; /* Distribuye el espacio entre el texto y la imagen */
+    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+}
+
+.about-us-content p {
+    max-width: 60%; /* Ajusta el ancho del texto */
+    text-align: justify; /* Justifica el texto */
+    margin-left: 30px; /* Espacio entre el texto y la imagen */
+    margin-right: 50px;
+    font-family: Arial, sans-serif; /* Cambio a Arial */
+    color: #ffffff; /* Color de texto blanco */
+    font-size: 1em;
+}
+
+.about-us-content img {
+    max-width: 50%; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para una mejor estética */
+    margin-left: 50px; /* Agrega margen a la izquierda de la imagen */
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+/* Responsive design para dispositivos móviles */
+@media (max-width: 768px) {
+    .about-us-content {
+        flex-direction: column; /* Cambia a disposición vertical */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .about-us-content img {
+        max-width: 90%; /* Ajusta el ancho de la imagen en móviles */
+        margin: 0 auto 15px auto; /* Centra la imagen y añade margen inferior */
+    }
+
+    .about-us-content p {
+        max-width: 100%; /* El texto ocupa todo el ancho */
+        margin: 0; /* Elimina márgenes laterales */
+        text-align: center; /* Centra el texto */
+    }
+}
+
