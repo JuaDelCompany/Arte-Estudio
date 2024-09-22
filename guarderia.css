@@ -216,6 +216,14 @@ footer a{
     nav a {
         padding: 10px;
     }
+
+    #imgcuerpo img {
+        width: 70%;   /* Ancho personalizado */
+        height: 60%;  /* Alto personalizado */
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
 }
 
 
@@ -233,6 +241,15 @@ footer a{
     .menu {
         display: contents;
     }
+
+    #imgcuerpo img {
+        width: 70%;   /* Ancho personalizado */
+        height: 60%;  /* Alto personalizado */
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
 }
 
 button {
@@ -331,4 +348,13 @@ header .overlay a:hover {
 
 .main-content img {
     display: none;
+}
+
+
+#imgcuerpo img {
+    width: 400px;   /* Ancho personalizado */
+    height: 600px;  /* Alto personalizado */
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
 }
